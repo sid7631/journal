@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body.dark {
+    --bg:#262626;
+    --headline:#fffffe;
+    --paragraph:#b8c1ec;
+    --button-bg:#eebbc3;
+    --button-text:#232946;
+    --stroke:#121629;
+    --main:#b8c1ec;
+    --highlight:#eebbc3;
+    --secondary:#fffffe;
+    --tertiary:#eebbc3;
+    --primary: ##232946;
+    --text-main: white;
+}
+
+body.light {
+    --primary: white;
+    --text-main: #111827;
+}
+
+
+.bg {
+    background-color: var(--bg);
+}
+
+.text-main {
+    color: var(--text-main);
+}
+
+.animate-theme-toggle {
+    transform: rotate();
+}
+
+@keyframes spin-theme-toggle-dark {
+    from {
+      transform: rotate(90deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes spin-theme-toggle-light {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
